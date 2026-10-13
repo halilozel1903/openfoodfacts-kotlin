@@ -1,0 +1,28 @@
+{
+  "count": 53,
+  "page": 1,
+  "page_count": 2,
+  "page_size": 2,
+  "skip": 0,
+  "products": [
+    {
+      "code": "3168930010265",
+      "product_name": "Cruesli Mélange de noix",
+      "brands": "Quaker",
+      "quantity": "450 g",
+      "nutriscore_grade": "a",
+      "nova_group": "4",
+      "ecoscore_grade": "b",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/316/893/001/0265/front_fr.81.200.jpg"
+    },
+    {
+      "code": "20000000000",
+      "product_name": "",
+      "generic_name": "Oat flakes",
+      "brands": "",
+      "nutriscore_grade": "unknown",
+      "nova_group": null,
+      "environmental_score_grade": "a-plus"
+    }
+  ]
+}

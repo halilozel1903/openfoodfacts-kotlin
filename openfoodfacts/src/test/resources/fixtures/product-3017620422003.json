@@ -1,0 +1,93 @@
+{
+  "code": "3017620422003",
+  "product": {
+    "code": "3017620422003",
+    "product_name": "Nutella",
+    "product_name_en": "Nutella",
+    "generic_name": "Pâte à tartiner aux noisettes et au cacao",
+    "brands": "Nutella, Ferrero",
+    "quantity": "400 g",
+    "serving_size": "15 g",
+    "lang": "fr",
+    "categories_tags": ["en:breakfasts", "en:spreads", "en:sweet-spreads", "en:hazelnut-spreads", "en:chocolate-spreads", "en:cocoa-and-hazelnuts-spreads"],
+    "labels_tags": ["en:green-dot"],
+    "countries_tags": ["en:france", "en:belgium"],
+    "nutriscore_grade": "e",
+    "nutriscore_score": 26,
+    "nova_group": 4,
+    "environmental_score_grade": "d",
+    "ecoscore_grade": "d",
+    "allergens_tags": ["en:milk", "en:nuts", "en:soybeans"],
+    "traces_tags": [],
+    "additives_tags": ["en:e322", "en:e322i"],
+    "ingredients_text": "Sucre, huile de palme, NOISETTES 13%, cacao maigre 7,4%, LAIT écrémé en poudre 6,6%, LACTOSERUM en poudre, émulsifiants: lécithines [SOJA], vanilline.",
+    "ingredients_text_en": "Sugar, palm oil, HAZELNUTS 13%, fat-reduced cocoa 7.4%, skimmed MILK powder 6.6%, WHEY powder, emulsifier: lecithins (SOYA), vanillin.",
+    "ingredients": [
+      {"id": "en:sugar", "text": "Sucre", "percent_estimate": 42.6, "percent_min": 21.3, "percent_max": 66.3, "vegan": "yes", "vegetarian": "yes"},
+      {"id": "en:palm-oil", "text": "huile de palme", "percent_estimate": 21.3, "percent_min": 13, "percent_max": 42.6, "vegan": "yes", "vegetarian": "yes", "from_palm_oil": "yes"},
+      {"id": "en:hazelnut", "text": "NOISETTES", "percent": 13, "percent_estimate": 13, "vegan": "yes", "vegetarian": "yes"},
+      {"id": "en:fat-reduced-cocoa", "text": "cacao maigre", "percent": "7.4", "percent_estimate": 7.4, "vegan": "yes", "vegetarian": "yes"},
+      {"id": "en:skimmed-milk-powder", "text": "LAIT écrémé en poudre", "percent": 6.6, "percent_estimate": 6.6, "vegan": "no", "vegetarian": "yes"},
+      {"id": "en:whey-powder", "text": "LACTOSERUM en poudre", "percent_estimate": 4.55, "vegan": "no", "vegetarian": "maybe"},
+      {"id": "en:emulsifier", "text": "émulsifiants", "percent_estimate": 4.55, "ingredients": [
+        {"id": "en:lecithins", "text": "lécithines", "percent_estimate": 4.55, "ingredients": [
+          {"id": "en:soya", "text": "SOJA", "percent_estimate": 4.55, "vegan": "yes", "vegetarian": "yes"}
+        ]}
+      ]},
+      {"id": "en:vanillin", "text": "vanilline", "percent_estimate": 0.0}
+    ],
+    "ingredients_analysis_tags": ["en:palm-oil", "en:non-vegan", "en:vegetarian"],
+    "nutriments": {
+      "energy-kcal": 539,
+      "energy-kcal_100g": 539,
+      "energy-kcal_unit": "kcal",
+      "energy-kj_100g": 2252,
+      "energy_100g": 2252,
+      "fat_100g": 30.9,
+      "saturated-fat_100g": 10.6,
+      "carbohydrates_100g": 57.5,
+      "sugars_100g": 56.3,
+      "fiber_100g": "",
+      "proteins_100g": 6.3,
+      "salt_100g": 0.107,
+      "salt_unit": "g",
+      "sodium_100g": 0.0428,
+      "sugars_serving": 8.45,
+      "nova-group_100g": 4
+    },
+    "nutrient_levels": {"fat": "high", "saturated-fat": "high", "sugars": "high", "salt": "low"},
+    "nutrition_data_per": "100g",
+    "image_front_url": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.400.jpg",
+    "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.200.jpg",
+    "image_front_thumb_url": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.100.jpg",
+    "image_nutrition_url": "https://images.openfoodfacts.org/images/products/301/762/042/2003/nutrition_fr.106.400.jpg",
+    "selected_images": {
+      "front": {
+        "display": {
+          "en": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_en.427.400.jpg",
+          "fr": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.400.jpg"
+        },
+        "small": {
+          "en": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_en.427.200.jpg",
+          "fr": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.200.jpg"
+        },
+        "thumb": {
+          "en": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_en.427.100.jpg",
+          "fr": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_fr.633.100.jpg"
+        }
+      },
+      "nutrition": {
+        "display": {"fr": "https://images.openfoodfacts.org/images/products/301/762/042/2003/nutrition_fr.106.400.jpg"}
+      }
+    },
+    "images": {
+      "1": {"uploaded_t": "1457680652", "uploader": "openfoodfacts-contributors", "sizes": {"100": {"w": 100, "h": 75}, "full": {"w": 2000, "h": 1500}}},
+      "front_en": {"imgid": "27", "rev": "427", "sizes": {"100": {"w": 77, "h": 100}, "400": {"w": 309, "h": 400}, "full": {"w": 1232, "h": 1600}}},
+      "front_fr": {"imgid": "40", "rev": 633, "sizes": {"100": {"w": 100, "h": 100}, "400": {"w": 400, "h": 400}, "full": {"w": 1500, "h": 1500}}},
+      "ingredients_fr": {"imgid": "18", "rev": "212", "sizes": {"full": {"w": 1400, "h": 900}}}
+    },
+    "last_modified_t": 1759000000
+  },
+  "status": 1,
+  "status_verbose": "product found"
+}
