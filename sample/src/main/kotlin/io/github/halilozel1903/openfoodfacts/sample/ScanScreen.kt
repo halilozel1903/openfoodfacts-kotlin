@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.MaterialTheme
@@ -158,6 +159,11 @@ private fun CameraCard(cameraAvailable: Boolean, onBarcode: (String) -> Unit) {
                         if (granted) scanning = true else permission.launch(Manifest.permission.CAMERA)
                     },
                     enabled = cameraAvailable,
+                    // The viewfinder is dark in both themes, so the disabled state (no camera) must stay readable on it.
+                    colors = ButtonDefaults.filledTonalButtonColors(
+                        disabledContainerColor = Color.White.copy(alpha = 0.16f),
+                        disabledContentColor = Color.White.copy(alpha = 0.85f),
+                    ),
                 ) { Text("Scan with camera") }
             }
         }

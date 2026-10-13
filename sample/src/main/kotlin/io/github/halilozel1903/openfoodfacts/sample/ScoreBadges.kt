@@ -10,7 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -110,7 +110,8 @@ fun NovaBadge(nova: NovaGroup?, modifier: Modifier = Modifier) {
             NovaGroup.Unprocessed -> "Unprocessed"
             NovaGroup.CulinaryIngredients -> "Ingredient"
             NovaGroup.Processed -> "Processed"
-            NovaGroup.UltraProcessed -> "Ultra-processed"
+            // Broken at the hyphen on purpose: the tile is too narrow for the whole word on one line.
+            NovaGroup.UltraProcessed -> "Ultra-\nprocessed"
             null -> "Unknown"
         },
         modifier = modifier.semantics { contentDescription = nova?.let { "NOVA group ${it.group}: ${it.label}" } ?: "NOVA group unknown" },
@@ -136,7 +137,7 @@ private fun ScoreTile(title: String, value: String, color: Long, caption: String
             .clip(RoundedCornerShape(14.dp))
             .background(MaterialTheme.colorScheme.surfaceContainerHigh)
             .padding(horizontal = 10.dp, vertical = 8.dp)
-            .width(68.dp),
+            .widthIn(min = 68.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {

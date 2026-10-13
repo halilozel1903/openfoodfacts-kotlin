@@ -89,8 +89,8 @@ private fun ProductContent(product: Product, tab: ProductTab, onTabChange: (Prod
         item {
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth().height(IntrinsicSize.Min)) {
                 NutriScoreBadge(product.nutriScore, Modifier.fillMaxHeight())
-                NovaBadge(product.nova, Modifier.fillMaxHeight())
-                GreenScoreBadge(product.greenScore, Modifier.fillMaxHeight())
+                NovaBadge(product.nova, Modifier.weight(1f).fillMaxHeight())
+                GreenScoreBadge(product.greenScore, Modifier.weight(1f).fillMaxHeight())
             }
         }
         item {
