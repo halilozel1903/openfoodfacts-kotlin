@@ -29,8 +29,15 @@ install_sample
 for mode in light dark; do
   set_night_mode "$mode"
   for scene in scan product ingredients cola search; do
-    fresh_launch --es scene "$scene"
-    wait_for_scene "$scene"
+    # Open Food Facts sometimes answers a search with a short-lived HTTP 503; try a scene up to three times.
+    # wait_for_scene runs in a subshell so its exit on failure only ends that attempt.
+    for attempt in 1 2 3; do
+      fresh_launch --es scene "$scene"
+      if (wait_for_scene "$scene"); then break; fi
+      if [ "$attempt" = 3 ]; then exit 1; fi
+      echo "Retrying the $scene scene in 30s (attempt $attempt failed)"
+      sleep 30
+    done
     capture "phone-$scene$(suffix "$mode")" "$(expected_text "$scene")"
     # Searches are limited to 10 a minute per client; each launch is a new process, but stay polite.
     if [ "$scene" = search ]; then sleep 6; fi
